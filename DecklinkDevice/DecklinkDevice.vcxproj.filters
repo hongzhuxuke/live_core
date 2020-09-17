@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="DeckLinkSdk">
+      <UniqueIdentifier>{4ac47e55-ded4-4519-a55d-847d524407a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Sources Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{914010dd-772d-4345-b6d6-345bb99a8f8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\Utility">
+      <UniqueIdentifier>{12c3aff3-d790-4c3c-afe7-9dc2d824d1fc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DecklinkDevice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DeckLinkAPI_h.h">
+      <Filter>DeckLinkSdk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\include\IDeckLinkDevice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\Utility\Alloc.h">
+      <Filter>common\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\Utility\ComPtr.hpp">
+      <Filter>common\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\Utility\ConfigFile.h">
+      <Filter>common\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\Utility\DebugAlloc.h">
+      <Filter>common\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\Utility\Defs.h">
+      <Filter>common\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\Utility\FastAlloc.h">
+      <Filter>common\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\Utility\Inline.h">
+      <Filter>common\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\Utility\Profiler.h">
+      <Filter>common\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\Utility\RAIIHelpers.h">
+      <Filter>common\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\Utility\Serializer.h">
+      <Filter>common\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\Utility\Template.h">
+      <Filter>common\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\Utility\XConfig.h">
+      <Filter>common\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\Utility\XFile.h">
+      <Filter>common\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\Utility\XMath.h">
+      <Filter>common\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\Utility\XString.h">
+      <Filter>common\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\Utility\XT.h">
+      <Filter>common\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\Utility\XT_Windows.h">
+      <Filter>common\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\Utility\XTLocalization.h">
+      <Filter>common\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\BufferQueue.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\Logging.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\Utility.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\Utility\utf8.h">
+      <Filter>common\Utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DecklinkDevice.cpp">
+      <Filter>Sources Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Sources Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeckLinkAPI_i.c">
+      <Filter>DeckLinkSdk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\Utility\ConfigFile.cpp">
+      <Filter>common\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\Utility\DebugAlloc.cpp">
+      <Filter>common\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\Utility\FastAlloc.cpp">
+      <Filter>common\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\Utility\Profiler.cpp">
+      <Filter>common\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\Utility\utf8-windows.cpp">
+      <Filter>common\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\Utility\XConfig.cpp">
+      <Filter>common\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\Utility\XFile_Windows.cpp">
+      <Filter>common\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\Utility\XMath.cpp">
+      <Filter>common\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\Utility\XString.cpp">
+      <Filter>common\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\Utility\XT.cpp">
+      <Filter>common\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\Utility\XT_Windows.cpp">
+      <Filter>common\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\Utility\XTLocalization.cpp">
+      <Filter>common\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\BufferQueue.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\Logging.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\Utility.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="DeckLinkAPI\include\DeckLinkAPI.idl">
+      <Filter>DeckLinkSdk</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DecklinkDevice.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

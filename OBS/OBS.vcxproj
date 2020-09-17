@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseHieLog|Win32">
+      <Configuration>ReleaseHieLog</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseHieLog|x64">
+      <Configuration>ReleaseHieLog</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4C1C68CF-7A4A-46A0-9BB8-708A4FF0DB56}</ProjectGuid>
+    <RootNamespace>OBS</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseHieLog|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseHieLog|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseHieLog|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseHieLog|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetExt>.dll</TargetExt>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(DXSDK_DIR)\Include\;$(SolutionDir)\msdk\include;$(SolutionDir);$(ProjectDir)..\..\common\interface;$(ProjectDir)..\..\common;$(ProjectDir)..\..\common\def;$(ProjectDir)..\..\common\message;$(ProjectDir)..\..\vhall_live_core\DShowPlugin;$(ProjectDir)..\..\vhall_live_core\libdshowcapture;$(ProjectDir)..\..\vhall_live_core\VHMonitorCapture;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\3rdparty\x264\include;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\common;$(ProjectDir)..\..\vhall_live_core\OBSApi</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)\Lib\x86\;$(SolutionDir)$(Configuration)\;$(LibraryPath);$(ProjectDir)..\..\vhall_live_core\vhall_media_core\build\windows\libsx86\x264\lib</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetExt>.dll</TargetExt>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(DXSDK_DIR)\Include\;$(SolutionDir)\msdk\include;$(SolutionDir);$(ProjectDir)..\..\common\interface;$(ProjectDir)..\..\common;$(ProjectDir)..\..\common\def;$(ProjectDir)..\..\common\message;$(ProjectDir)..\..\vhall_live_core\DShowPlugin;$(ProjectDir)..\..\vhall_live_core\libdshowcapture;$(ProjectDir)..\..\vhall_live_core\VHMonitorCapture;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\common;$(ProjectDir)..\..\vhall_live_core\OBSApi</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x64\;$(SolutionDir)$(Platform)\$(Configuration)\;$(SolutionDir)vhall_live_core\vhall_media_core\build\windows\libsx86_64\x264\lib;$(SolutionDir)vhall_live_core\vhall_media_core_build\bin\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetExt>.dll</TargetExt>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(DXSDK_DIR)\Include\;$(SolutionDir)\msdk\include;$(SolutionDir);$(ProjectDir)..\..\vhall_live_core\OBSApi;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\common;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\3rdparty\x264\include;$(ProjectDir)..\..\vhall_live_core\VHMonitorCapture;$(ProjectDir)..\..\vhall_live_core\libdshowcapture;$(ProjectDir)..\..\vhall_live_core\DShowPlugin;$(ProjectDir)..\..\common\interface;$(ProjectDir)..\..\common;$(ProjectDir)..\..\common\def;$(ProjectDir)..\..\common\message</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)\Lib\x86\;$(SolutionDir)$(Configuration)\;$(SolutionDir)\x264\libs\32bit\;$(SolutionDir)\vhall_media_core\build\windows\libsx86\x264\lib;$(ProjectDir)..\..\common\interface;$(ProjectDir)..\..\common;$(ProjectDir)..\..\common\def;$(ProjectDir)..\..\common\message;$(ProjectDir)..\..\vhall_live_core\DShowPlugin;$(ProjectDir)..\..\vhall_live_core\libdshowcapture;$(ProjectDir)..\..\vhall_live_core\VHMonitorCapture;$(ProjectDir)..\..\vhall_media_core\3rdparty\x264\include;$(ProjectDir)..\..\vhall_live_core\OBSApi;$(ProjectDir)..\..\vhall_media_core\common;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetExt>.dll</TargetExt>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(DXSDK_DIR)Include\;$(SolutionDir);$(ProjectDir)..\..\vhall_live_core\OBSApi;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\common;$(ProjectDir)..\..\vhall_live_core\VHMonitorCapture;$(ProjectDir)..\..\vhall_live_core\libdshowcapture;$(ProjectDir)..\..\vhall_live_core\DShowPlugin;$(ProjectDir)..\..\common\interface;$(ProjectDir)..\..\common;$(ProjectDir)..\..\common\def;$(ProjectDir)..\..\common\message</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x64\;$(SolutionDir)$(Platform)\$(Configuration)\;$(SolutionDir)vhall_live_core\vhall_media_core\build\windows\libsx86_64\x264\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseHieLog|Win32'">
+    <TargetExt>.dll</TargetExt>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(DXSDK_DIR)\Include\;$(SolutionDir)\msdk\include;$(SolutionDir);$(ProjectDir)..\..\vhall_live_core\OBSApi;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\common;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\3rdparty\x264\include;$(ProjectDir)..\..\vhall_live_core\VHMonitorCapture;$(ProjectDir)..\..\vhall_live_core\libdshowcapture;$(ProjectDir)..\..\vhall_live_core\DShowPlugin;$(ProjectDir)..\..\common\interface;$(ProjectDir)..\..\common;$(ProjectDir)..\..\common\def;$(ProjectDir)..\..\common\message</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)\Lib\x86\;$(SolutionDir)$(Configuration)\;$(SolutionDir)\x264\libs\32bit\;$(SolutionDir)\vhall_media_core\build\windows\libsx86\x264\bin;$(ProjectDir)..\..\common\interface;$(ProjectDir)..\..\common;$(ProjectDir)..\..\common\def;$(ProjectDir)..\..\common\message;$(ProjectDir)..\..\vhall_live_core\DShowPlugin;$(ProjectDir)..\..\vhall_live_core\libdshowcapture;$(ProjectDir)..\..\vhall_live_core\VHMonitorCapture;$(ProjectDir)..\..\vhall_media_core\3rdparty\x264\include;$(ProjectDir)..\..\vhall_live_core\OBSApi;$(ProjectDir)..\..\vhall_media_core\common;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseHieLog|x64'">
+    <TargetExt>.dll</TargetExt>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(DXSDK_DIR)\Include\;$(SolutionDir)\msdk\include;$(SolutionDir);$(ProjectDir)..\..\vhall_live_core\OBSApi;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\common;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\3rdparty\x264\include;$(ProjectDir)..\..\vhall_live_core\VHMonitorCapture;$(ProjectDir)..\..\vhall_live_core\libdshowcapture;$(ProjectDir)..\..\vhall_live_core\DShowPlugin;$(ProjectDir)..\..\common\interface;$(ProjectDir)..\..\common;$(ProjectDir)..\..\common\def;$(ProjectDir)..\..\common\message</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)\Lib\x86\;$(SolutionDir)$(Configuration)\;$(SolutionDir)\x264\libs\32bit\;$(SolutionDir)\vhall_media_core\build\windows\libsx86\x264\bin;$(ProjectDir)..\..\common\interface;$(ProjectDir)..\..\common;$(ProjectDir)..\..\common\def;$(ProjectDir)..\..\common\message;$(ProjectDir)..\..\vhall_live_core\DShowPlugin;$(ProjectDir)..\..\vhall_live_core\libdshowcapture;$(ProjectDir)..\..\vhall_live_core\VHMonitorCapture;$(ProjectDir)..\..\vhall_media_core\3rdparty\x264\include;$(ProjectDir)..\..\vhall_live_core\OBSApi;$(ProjectDir)..\..\vhall_media_core\common;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;$(OBS_VERSION_SUFFIX);$(DynamicDefines);_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\win_desktop_capture\VHDesktopCapture\VHDesktopCapture;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Avrt.lib;dwmapi.lib;comctl32.lib;ws2_32.lib;Iphlpapi.lib;Winmm.lib;dsound.lib;obsapi.lib;shell32.lib;gdiplus.lib;mfplat.lib;Mfuuid.lib;Winhttp.lib;libx264-157.lib;UxTheme.lib;Xinput9_1_0.lib;DecklinkDevice.lib;MediaReader.lib;DShowPlugin.lib;VHMonitorCapture.lib;VHDesktopCapture.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN64;$(OBS_VERSION_SUFFIX);$(DynamicDefines);_DEBUG;_WINDOWS;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\win_desktop_capture\VHDesktopCapture\VHDesktopCapture;$(ProjectDir)..\libyuv\include;$(ProjectDir)..\vhall_media_core\3rdparty\videofilter\src;$(ProjectDir)..\VHGPUImage\include;$(ProjectDir)..\vhall_media_core\3rdparty\libjingle;$(ProjectDir)..\VHGPUImage;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Avrt.lib;dwmapi.lib;comctl32.lib;ws2_32.lib;Iphlpapi.lib;Winmm.lib;dsound.lib;obsapi.lib;shell32.lib;gdiplus.lib;mfplat.lib;Mfuuid.lib;Winhttp.lib;libx264-157.lib;UxTheme.lib;Xinput9_1_0.lib;DecklinkDevice.lib;MediaReader.lib;DShowPlugin.lib;VHMonitorCapture.lib;VHDesktopCapture.lib;yuv.lib;video_filter.lib;freeglut_x64_Debug.lib;glew64d.lib;libjingle.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\libyuv_build\Debug;$(ProjectDir)..\vhall_media_core_build\bin\Debug\;$(ProjectDir)..\VHGPUImage\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;$(OBS_VERSION_SUFFIX);$(DynamicDefines);_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeaderFile>Main.h</PrecompiledHeaderFile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\win_desktop_capture\VHDesktopCapture\VHDesktopCapture</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Avrt.lib;dwmapi.lib;comctl32.lib;dxgi.lib;dxguid.lib;d3d10_1.lib;d3dx10.lib;ws2_32.lib;Iphlpapi.lib;Winmm.lib;dsound.lib;obsapi.lib;shell32.lib;gdiplus.lib;mfplat.lib;Mfuuid.lib;Winhttp.lib;UxTheme.lib;Xinput9_1_0.lib;DecklinkDevice.lib;MediaReader.lib;DShowPlugin.lib;VHMonitorCapture.lib;VHDesktopCapture.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>LIBCMT</IgnoreSpecificDefaultLibraries>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <StripPrivateSymbols>
+      </StripPrivateSymbols>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN64;$(OBS_VERSION_SUFFIX);$(DynamicDefines);_WINDOWS;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeaderFile>Main.h</PrecompiledHeaderFile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\win_desktop_capture\VHDesktopCapture\VHDesktopCapture;$(ProjectDir)..\libyuv\include;$(ProjectDir)..\vhall_media_core\3rdparty\videofilter\src;$(ProjectDir)..\VHGPUImage\include;$(ProjectDir)..\vhall_media_core\3rdparty\libjingle;$(ProjectDir)..\VHGPUImage;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Avrt.lib;dwmapi.lib;comctl32.lib;ws2_32.lib;Iphlpapi.lib;Winmm.lib;dsound.lib;obsapi.lib;shell32.lib;gdiplus.lib;mfplat.lib;Mfuuid.lib;Winhttp.lib;libx264-157.lib;UxTheme.lib;Xinput9_1_0.lib;DecklinkDevice.lib;MediaReader.lib;DShowPlugin.lib;VHMonitorCapture.lib;VHDesktopCapture.lib;yuv.lib;video_filter.lib;glew_shared_x64_Release.lib;freeglut_x64_Release.lib;libjingle.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>LIBCMT</IgnoreSpecificDefaultLibraries>
+      <ProgramDatabaseFile>$(SolutionDir)pdb32\$(TargetName).pdb</ProgramDatabaseFile>
+      <StripPrivateSymbols>$(SolutionDir)pdb32\stripped\$(TargetName).pdb</StripPrivateSymbols>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\libyuv_build\Release;$(ProjectDir)..\vhall_media_core_build\bin\Release\;$(ProjectDir)..\VHGPUImage\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseHieLog|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;$(OBS_VERSION_SUFFIX);$(DynamicDefines);_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeaderFile>Main.h</PrecompiledHeaderFile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Avrt.lib;dwmapi.lib;comctl32.lib;dxgi.lib;dxguid.lib;d3d10_1.lib;d3dx10.lib;ws2_32.lib;Iphlpapi.lib;Winmm.lib;dsound.lib;obsapi.lib;shell32.lib;gdiplus.lib;mfplat.lib;Mfuuid.lib;Winhttp.lib;UxTheme.lib;Xinput9_1_0.lib;DecklinkDevice.lib;MediaReader.lib;DShowPlugin.lib;VHMonitorCapture.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>LIBCMT</IgnoreSpecificDefaultLibraries>
+      <ProgramDatabaseFile>$(SolutionDir)pdb32\$(TargetName).pdb</ProgramDatabaseFile>
+      <StripPrivateSymbols>$(SolutionDir)pdb32\stripped\$(TargetName).pdb</StripPrivateSymbols>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseHieLog|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;$(OBS_VERSION_SUFFIX);$(DynamicDefines);_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeaderFile>Main.h</PrecompiledHeaderFile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Avrt.lib;dwmapi.lib;comctl32.lib;dxgi.lib;dxguid.lib;d3d10_1.lib;d3dx10.lib;ws2_32.lib;Iphlpapi.lib;Winmm.lib;dsound.lib;obsapi.lib;shell32.lib;gdiplus.lib;mfplat.lib;Mfuuid.lib;Winhttp.lib;UxTheme.lib;Xinput9_1_0.lib;DecklinkDevice.lib;MediaReader.lib;DShowPlugin.lib;VHMonitorCapture.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>LIBCMT</IgnoreSpecificDefaultLibraries>
+      <ProgramDatabaseFile>$(SolutionDir)pdb32\$(TargetName).pdb</ProgramDatabaseFile>
+      <StripPrivateSymbols>$(SolutionDir)pdb32\stripped\$(TargetName).pdb</StripPrivateSymbols>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\common\interface\IGraphics.h" />
+    <ClInclude Include="..\common\message\Msg_OBSControl.h" />
+    <ClInclude Include="..\VHGPUImage\log.h" />
+    <ClInclude Include="..\VHGPUImage\VHBeautifyFilter.h" />
+    <ClInclude Include="..\VHGPUImage\VHBeautifyRender.h" />
+    <ClInclude Include="..\VHGPUImage\VHGPUImageBrightnessFilter.h" />
+    <ClInclude Include="..\VHGPUImage\VHGPUImageFilter.h" />
+    <ClInclude Include="..\VHGPUImage\VHOpenGLUtil.h" />
+    <ClInclude Include="..\VHGPUImage\VHRunnable.h" />
+    <ClInclude Include="..\VHGPUImage\VHShaderUtil.h" />
+    <ClInclude Include="..\VHGPUImage\wglContext\VHGLContext.h" />
+    <ClInclude Include="..\VHGPUImage\wglContext\VHOpenGLBase.h" />
+    <ClInclude Include="arraysize.h" />
+    <ClInclude Include="BitmapImage.h" />
+    <ClInclude Include="DataPacketHelpers.h" />
+    <ClInclude Include="DeckLinkVideoSource.h" />
+    <ClInclude Include="DeviceSource.h" />
+    <ClInclude Include="Graphics.h" />
+    <ClInclude Include="inttypes.h" />
+    <ClInclude Include="libnsgif.h" />
+    <ClInclude Include="Main.h" />
+    <ClInclude Include="MediaVideoSource.h" />
+    <ClInclude Include="OBS.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="WindowStuff.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\common\message\Msg_MainUI.cpp" />
+    <ClCompile Include="..\..\common\message\Msg_OBSControl.cpp" />
+    <ClCompile Include="..\VHGPUImage\VHBeautifyFilter.cpp" />
+    <ClCompile Include="..\VHGPUImage\VHBeautifyRender.cpp" />
+    <ClCompile Include="..\VHGPUImage\VHGPUImageBrightnessFilter.cpp" />
+    <ClCompile Include="..\VHGPUImage\VHGPUImageFilter.cpp" />
+    <ClCompile Include="..\VHGPUImage\VHRunnable.cpp" />
+    <ClCompile Include="..\VHGPUImage\VHShaderUtil.cpp" />
+    <ClCompile Include="..\VHGPUImage\wglContext\VHGLContext.cpp" />
+    <ClCompile Include="..\VHGPUImage\wglContext\VHOpenGLBase.cpp" />
+    <ClCompile Include="API.cpp" />
+    <ClCompile Include="BitmapImage.cpp" />
+    <ClCompile Include="BitmapImageSource.cpp" />
+    <ClCompile Include="CrashDumpHandler.cpp" />
+    <ClCompile Include="DeckLinkVideoSource.cpp" />
+    <ClCompile Include="DesktopImageSource.cpp" />
+    <ClCompile Include="DeviceSource.cpp" />
+    <ClCompile Include="GlobalSource.cpp" />
+    <ClCompile Include="Graphics.cpp" />
+    <ClCompile Include="ImageProcessing.cpp" />
+    <ClCompile Include="libnsgif.c" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MediaVideoSource.cpp" />
+    <ClCompile Include="OBS.cpp" />
+    <ClCompile Include="OBSCapture.cpp" />
+    <ClCompile Include="OBSVideoCapture.cpp" />
+    <ClCompile Include="TextOutputSource.cpp" />
+    <ClCompile Include="WindowStuff.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

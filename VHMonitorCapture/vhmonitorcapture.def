@@ -1,0 +1,13 @@
+LIBRARY  VHMonitorCapture.dll
+EXPORTS
+;
+; VHMonitorCapture exports
+;
+VHD_Window_Enum_init	@1
+VHD_Window_Enum_update	@2
+VHD_Window_Enum_final	@3
+VHD_CreateAreaWindow	@4
+VHD_Render				@5
+VHD_ActiveWindow		@6
+VHD_DesktopWindowInfo	@7
+VHD_PreView				@8

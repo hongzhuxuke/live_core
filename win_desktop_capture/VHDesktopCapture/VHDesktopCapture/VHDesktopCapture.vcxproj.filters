@@ -1,0 +1,681 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="libyuv">
+      <UniqueIdentifier>{93636752-92b2-4416-9a0c-6f8de8cac10c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules">
+      <UniqueIdentifier>{2b1873bc-28f3-44a3-9c36-8f1c5b6c400e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libyuv\include">
+      <UniqueIdentifier>{a66d8dc2-9455-490a-8bb6-ad795c9198fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libyuv\source">
+      <UniqueIdentifier>{8f44d568-3a06-40b1-b672-367c1422baff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libyuv\include\libyuv">
+      <UniqueIdentifier>{fd4cab61-04a3-48a7-937b-db70e5f6cb7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules\desktop_capture">
+      <UniqueIdentifier>{d3691755-eff5-4ed5-9b89-762255bd3d29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules\desktop_capture\win">
+      <UniqueIdentifier>{df00e8a4-2cd2-47d0-b2d1-9d7221c67112}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtc_base">
+      <UniqueIdentifier>{e70cc0de-01c7-4b09-86ae-340ee17c3666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system_wrapper">
+      <UniqueIdentifier>{2ff7dd39-7f43-401c-88b2-6555ca2a2d45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system_wrapper\include">
+      <UniqueIdentifier>{1bdbb589-0b3d-4bd4-918d-3e9b88425b95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system_wrapper\source">
+      <UniqueIdentifier>{40b73354-0ca0-4e8c-aa10-70c2bf2f66f8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="VHDesktopCaptureImpl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\compare.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\compare_common.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\compare_gcc.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\compare_msa.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\compare_neon.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\compare_neon64.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\compare_win.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\convert.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\convert_argb.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\convert_from.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\convert_from_argb.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\convert_jpeg.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\convert_to_argb.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\convert_to_i420.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\cpu_id.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\mjpeg_decoder.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\mjpeg_validate.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\planar_functions.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\rotate.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\rotate_any.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\rotate_argb.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\rotate_common.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\rotate_gcc.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\rotate_msa.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\rotate_neon.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\rotate_neon64.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\rotate_win.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\row_any.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\row_common.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\row_gcc.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\row_msa.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\row_neon.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\row_neon64.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\row_win.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\scale.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\scale_any.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\scale_argb.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\scale_common.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\scale_gcc.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\scale_msa.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\scale_neon.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\scale_neon64.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\scale_win.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libyuv\source\video_common.cc">
+      <Filter>libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\win\cursor.cc">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\win\d3d_device.cc">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\win\desktop.cc">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\win\display_configuration_monitor.cc">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\win\dxgi_adapter_duplicator.cc">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\win\dxgi_context.cc">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\win\dxgi_duplicator_controller.cc">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\win\dxgi_frame.cc">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\win\dxgi_output_duplicator.cc">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\win\dxgi_texture.cc">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\win\dxgi_texture_mapping.cc">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\win\dxgi_texture_staging.cc">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\win\scoped_thread_desktop.cc">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\win\screen_capture_utils.cc">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\win\screen_capturer_win_directx.cc">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\win\screen_capturer_win_gdi.cc">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\win\window_capture_utils.cc">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\blank_detector_desktop_capturer_wrapper.cc">
+      <Filter>modules\desktop_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\capture_result_desktop_capturer_wrapper.cc">
+      <Filter>modules\desktop_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\cropped_desktop_frame.cc">
+      <Filter>modules\desktop_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\cropping_window_capturer.cc">
+      <Filter>modules\desktop_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\cropping_window_capturer_win.cc">
+      <Filter>modules\desktop_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\desktop_and_cursor_composer.cc">
+      <Filter>modules\desktop_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\desktop_capture_options.cc">
+      <Filter>modules\desktop_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\desktop_capturer.cc">
+      <Filter>modules\desktop_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\desktop_capturer_differ_wrapper.cc">
+      <Filter>modules\desktop_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\desktop_capturer_wrapper.cc">
+      <Filter>modules\desktop_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\desktop_frame.cc">
+      <Filter>modules\desktop_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\desktop_frame_generator.cc">
+      <Filter>modules\desktop_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\desktop_frame_rotation.cc">
+      <Filter>modules\desktop_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\desktop_frame_win.cc">
+      <Filter>modules\desktop_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\desktop_geometry.cc">
+      <Filter>modules\desktop_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\desktop_region.cc">
+      <Filter>modules\desktop_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\differ_block.cc">
+      <Filter>modules\desktop_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\differ_vector_sse2.cc">
+      <Filter>modules\desktop_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\fake_desktop_capturer.cc">
+      <Filter>modules\desktop_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\fallback_desktop_capturer_wrapper.cc">
+      <Filter>modules\desktop_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\mouse_cursor.cc">
+      <Filter>modules\desktop_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\mouse_cursor_monitor_win.cc">
+      <Filter>modules\desktop_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\resolution_tracker.cc">
+      <Filter>modules\desktop_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\rgba_color.cc">
+      <Filter>modules\desktop_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\screen_capturer_helper.cc">
+      <Filter>modules\desktop_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\screen_capturer_win.cc">
+      <Filter>modules\desktop_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\screen_drawer.cc">
+      <Filter>modules\desktop_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\screen_drawer_win.cc">
+      <Filter>modules\desktop_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\shared_desktop_frame.cc">
+      <Filter>modules\desktop_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\shared_memory.cc">
+      <Filter>modules\desktop_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\window_capturer_win.cc">
+      <Filter>modules\desktop_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\window_finder.cc">
+      <Filter>modules\desktop_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\window_finder_win.cc">
+      <Filter>modules\desktop_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="rtc_base\checks.cc">
+      <Filter>rtc_base</Filter>
+    </ClCompile>
+    <ClCompile Include="rtc_base\criticalsection.cc">
+      <Filter>rtc_base</Filter>
+    </ClCompile>
+    <ClCompile Include="rtc_base\logging.cc">
+      <Filter>rtc_base</Filter>
+    </ClCompile>
+    <ClCompile Include="rtc_base\platform_thread_types.cc">
+      <Filter>rtc_base</Filter>
+    </ClCompile>
+    <ClCompile Include="rtc_base\random.cc">
+      <Filter>rtc_base</Filter>
+    </ClCompile>
+    <ClCompile Include="rtc_base\stringencode.cc">
+      <Filter>rtc_base</Filter>
+    </ClCompile>
+    <ClCompile Include="rtc_base\stringutils.cc">
+      <Filter>rtc_base</Filter>
+    </ClCompile>
+    <ClCompile Include="rtc_base\thread_checker_impl.cc">
+      <Filter>rtc_base</Filter>
+    </ClCompile>
+    <ClCompile Include="rtc_base\timeutils.cc">
+      <Filter>rtc_base</Filter>
+    </ClCompile>
+    <ClCompile Include="rtc_base\win32.cc">
+      <Filter>rtc_base</Filter>
+    </ClCompile>
+    <ClCompile Include="system_wrappers\source\cpu_features.cc">
+      <Filter>system_wrapper\source</Filter>
+    </ClCompile>
+    <ClCompile Include="system_wrappers\source\metrics_default.cc">
+      <Filter>system_wrapper\source</Filter>
+    </ClCompile>
+    <ClCompile Include="system_wrappers\source\rw_lock.cc">
+      <Filter>system_wrapper\source</Filter>
+    </ClCompile>
+    <ClCompile Include="system_wrappers\source\rw_lock_win.cc">
+      <Filter>system_wrapper\source</Filter>
+    </ClCompile>
+    <ClCompile Include="system_wrappers\source\sleep.cc">
+      <Filter>system_wrapper\source</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\desktop_capture\win\screen_capturer_win_magnifier.cc">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="VHDesktopCaptureInterface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VHDesktopCaptureImpl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="libyuv\include\libyuv\basic_types.h">
+      <Filter>libyuv\include\libyuv</Filter>
+    </ClInclude>
+    <ClInclude Include="libyuv\include\libyuv\compare.h">
+      <Filter>libyuv\include\libyuv</Filter>
+    </ClInclude>
+    <ClInclude Include="libyuv\include\libyuv\compare_row.h">
+      <Filter>libyuv\include\libyuv</Filter>
+    </ClInclude>
+    <ClInclude Include="libyuv\include\libyuv\convert.h">
+      <Filter>libyuv\include\libyuv</Filter>
+    </ClInclude>
+    <ClInclude Include="libyuv\include\libyuv\convert_argb.h">
+      <Filter>libyuv\include\libyuv</Filter>
+    </ClInclude>
+    <ClInclude Include="libyuv\include\libyuv\convert_from.h">
+      <Filter>libyuv\include\libyuv</Filter>
+    </ClInclude>
+    <ClInclude Include="libyuv\include\libyuv\convert_from_argb.h">
+      <Filter>libyuv\include\libyuv</Filter>
+    </ClInclude>
+    <ClInclude Include="libyuv\include\libyuv\cpu_id.h">
+      <Filter>libyuv\include\libyuv</Filter>
+    </ClInclude>
+    <ClInclude Include="libyuv\include\libyuv\macros_msa.h">
+      <Filter>libyuv\include\libyuv</Filter>
+    </ClInclude>
+    <ClInclude Include="libyuv\include\libyuv\mjpeg_decoder.h">
+      <Filter>libyuv\include\libyuv</Filter>
+    </ClInclude>
+    <ClInclude Include="libyuv\include\libyuv\planar_functions.h">
+      <Filter>libyuv\include\libyuv</Filter>
+    </ClInclude>
+    <ClInclude Include="libyuv\include\libyuv\rotate.h">
+      <Filter>libyuv\include\libyuv</Filter>
+    </ClInclude>
+    <ClInclude Include="libyuv\include\libyuv\rotate_argb.h">
+      <Filter>libyuv\include\libyuv</Filter>
+    </ClInclude>
+    <ClInclude Include="libyuv\include\libyuv\rotate_row.h">
+      <Filter>libyuv\include\libyuv</Filter>
+    </ClInclude>
+    <ClInclude Include="libyuv\include\libyuv\row.h">
+      <Filter>libyuv\include\libyuv</Filter>
+    </ClInclude>
+    <ClInclude Include="libyuv\include\libyuv\scale.h">
+      <Filter>libyuv\include\libyuv</Filter>
+    </ClInclude>
+    <ClInclude Include="libyuv\include\libyuv\scale_argb.h">
+      <Filter>libyuv\include\libyuv</Filter>
+    </ClInclude>
+    <ClInclude Include="libyuv\include\libyuv\scale_row.h">
+      <Filter>libyuv\include\libyuv</Filter>
+    </ClInclude>
+    <ClInclude Include="libyuv\include\libyuv\version.h">
+      <Filter>libyuv\include\libyuv</Filter>
+    </ClInclude>
+    <ClInclude Include="libyuv\include\libyuv\video_common.h">
+      <Filter>libyuv\include\libyuv</Filter>
+    </ClInclude>
+    <ClInclude Include="libyuv\include\libyuv.h">
+      <Filter>libyuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\win\cursor.h">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\win\d3d_device.h">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\win\desktop.h">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\win\display_configuration_monitor.h">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\win\dxgi_adapter_duplicator.h">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\win\dxgi_context.h">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\win\dxgi_duplicator_controller.h">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\win\dxgi_frame.h">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\win\dxgi_output_duplicator.h">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\win\dxgi_texture.h">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\win\dxgi_texture_mapping.h">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\win\dxgi_texture_staging.h">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\win\scoped_gdi_object.h">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\win\scoped_thread_desktop.h">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\win\screen_capture_utils.h">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\win\screen_capturer_win_directx.h">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\win\screen_capturer_win_gdi.h">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\win\window_capture_utils.h">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\blank_detector_desktop_capturer_wrapper.h">
+      <Filter>modules\desktop_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\capture_result_desktop_capturer_wrapper.h">
+      <Filter>modules\desktop_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\cropped_desktop_frame.h">
+      <Filter>modules\desktop_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\cropping_window_capturer.h">
+      <Filter>modules\desktop_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\desktop_and_cursor_composer.h">
+      <Filter>modules\desktop_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\desktop_capture_options.h">
+      <Filter>modules\desktop_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\desktop_capture_types.h">
+      <Filter>modules\desktop_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\desktop_capturer.h">
+      <Filter>modules\desktop_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\desktop_capturer_differ_wrapper.h">
+      <Filter>modules\desktop_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\desktop_capturer_wrapper.h">
+      <Filter>modules\desktop_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\desktop_frame.h">
+      <Filter>modules\desktop_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\desktop_frame_generator.h">
+      <Filter>modules\desktop_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\desktop_frame_rotation.h">
+      <Filter>modules\desktop_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\desktop_frame_win.h">
+      <Filter>modules\desktop_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\desktop_geometry.h">
+      <Filter>modules\desktop_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\desktop_region.h">
+      <Filter>modules\desktop_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\differ_block.h">
+      <Filter>modules\desktop_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\differ_vector_sse2.h">
+      <Filter>modules\desktop_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\fake_desktop_capturer.h">
+      <Filter>modules\desktop_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\fallback_desktop_capturer_wrapper.h">
+      <Filter>modules\desktop_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\mouse_cursor.h">
+      <Filter>modules\desktop_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\mouse_cursor_monitor.h">
+      <Filter>modules\desktop_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\resolution_tracker.h">
+      <Filter>modules\desktop_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\rgba_color.h">
+      <Filter>modules\desktop_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\screen_capture_frame_queue.h">
+      <Filter>modules\desktop_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\screen_capturer_helper.h">
+      <Filter>modules\desktop_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\screen_drawer.h">
+      <Filter>modules\desktop_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\shared_desktop_frame.h">
+      <Filter>modules\desktop_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\shared_memory.h">
+      <Filter>modules\desktop_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\window_finder.h">
+      <Filter>modules\desktop_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\window_finder_win.h">
+      <Filter>modules\desktop_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="rtc_base\arraysize.h">
+      <Filter>rtc_base</Filter>
+    </ClInclude>
+    <ClInclude Include="rtc_base\atomicops.h">
+      <Filter>rtc_base</Filter>
+    </ClInclude>
+    <ClInclude Include="rtc_base\basictypes.h">
+      <Filter>rtc_base</Filter>
+    </ClInclude>
+    <ClInclude Include="rtc_base\bytebuffer.h">
+      <Filter>rtc_base</Filter>
+    </ClInclude>
+    <ClInclude Include="rtc_base\checks.h">
+      <Filter>rtc_base</Filter>
+    </ClInclude>
+    <ClInclude Include="rtc_base\constructormagic.h">
+      <Filter>rtc_base</Filter>
+    </ClInclude>
+    <ClInclude Include="rtc_base\criticalsection.h">
+      <Filter>rtc_base</Filter>
+    </ClInclude>
+    <ClInclude Include="rtc_base\deprecation.h">
+      <Filter>rtc_base</Filter>
+    </ClInclude>
+    <ClInclude Include="rtc_base\logging.h">
+      <Filter>rtc_base</Filter>
+    </ClInclude>
+    <ClInclude Include="rtc_base\platform_thread_types.h">
+      <Filter>rtc_base</Filter>
+    </ClInclude>
+    <ClInclude Include="rtc_base\random.h">
+      <Filter>rtc_base</Filter>
+    </ClInclude>
+    <ClInclude Include="rtc_base\stringencode.h">
+      <Filter>rtc_base</Filter>
+    </ClInclude>
+    <ClInclude Include="rtc_base\stringutils.h">
+      <Filter>rtc_base</Filter>
+    </ClInclude>
+    <ClInclude Include="rtc_base\thread_annotations.h">
+      <Filter>rtc_base</Filter>
+    </ClInclude>
+    <ClInclude Include="rtc_base\thread_checker.h">
+      <Filter>rtc_base</Filter>
+    </ClInclude>
+    <ClInclude Include="rtc_base\thread_checker_impl.h">
+      <Filter>rtc_base</Filter>
+    </ClInclude>
+    <ClInclude Include="rtc_base\timeutils.h">
+      <Filter>rtc_base</Filter>
+    </ClInclude>
+    <ClInclude Include="rtc_base\type_traits.h">
+      <Filter>rtc_base</Filter>
+    </ClInclude>
+    <ClInclude Include="rtc_base\win32.h">
+      <Filter>rtc_base</Filter>
+    </ClInclude>
+    <ClInclude Include="system_wrappers\include\cpu_features_wrapper.h">
+      <Filter>system_wrapper\include</Filter>
+    </ClInclude>
+    <ClInclude Include="system_wrappers\include\metrics.h">
+      <Filter>system_wrapper\include</Filter>
+    </ClInclude>
+    <ClInclude Include="system_wrappers\include\metrics_default.h">
+      <Filter>system_wrapper\include</Filter>
+    </ClInclude>
+    <ClInclude Include="system_wrappers\include\rw_lock_wrapper.h">
+      <Filter>system_wrapper\include</Filter>
+    </ClInclude>
+    <ClInclude Include="system_wrappers\include\sleep.h">
+      <Filter>system_wrapper\include</Filter>
+    </ClInclude>
+    <ClInclude Include="system_wrappers\source\rw_lock_win.h">
+      <Filter>system_wrapper\source</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\desktop_capture\win\screen_capturer_win_magnifier.h">
+      <Filter>modules\desktop_capture\win</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

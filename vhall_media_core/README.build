@@ -1,0 +1,94 @@
+
+after you git clone the source,you should download submodules:
+cd vhall_media_core
+git submodule init
+git submodule update
+
+before you build the project you should install cmake.And make sure it can be find under $PATH evironment.
+If you cmake version is less than 3.7, the follow build cmd may cause error. You can open CMakeList.txt,
+and remove the first line "cmake_minimum_required(VERSION 3.7)". Then try again. but we strongly recommand
+you to install cmake3.7 or uper version.
+
+
+windows build(x86):
+	open cmd console
+	cd vhall_media_core
+	md objs
+	cd objs
+	cmake .. -G "Visual Studio 15 2017"
+	
+windows build(x64):
+	open cmd console
+	cd vhall_media_core
+	md objs
+	cd objs
+	cmake .. -G "Visual Studio 15 2017 Win64"
+	
+
+	
+project files while be created in objs open ALL_BUILD.sln and build it, target files will be created in objs/bin. 
+if build debug it will be objs/bin/Debug and you need to copy all dlls in objs/bin to objs/bin/Debug manually to
+run the test(now have not finished) and use the libs
+
+#NOTICE 1#
+if you build test application,you must add third libs as follows：
+
+iphlpapi.lib
+Secur32.lib
+Wininet.lib
+Crypt32.lib
+ws2_32.lib
+Wsock32.lib
+winmm.lib
+kernel32.lib
+user32.lib
+gdi32.lib
+winspool.lib
+shell32.lib
+ole32.lib
+oleaut32.lib
+uuid.lib
+comdlg32.lib
+advapi32.lib
+msc.lib
+
+#NOTICE 2#
+if your project use(or depend on) media quality function in debug mode, you should modify "Additional dependencies"
+(project property --> linker --> input --> additional dependencies)
+change "..\build\windows\libsx86\vmaf\lib\libvmaf.lib" to "..\build\windows\libsx86\vmaf\lib\Debug\libvmaf.lib"
+otherwise, a link error may occur(for /MDd and /MD is incompatible).
+
+And if you set CMAKE_BUILD_TYPE = Debug when you generate your Visual Studio project, you should change
+"..\build\windows\libsx86\vmaf\lib\Debug\libvmaf.lib" to "..\build\windows\libsx86\vmaf\lib\libvmaf.lib" at relaese
+mode.
+
+
+#NOTICE 3#
+if you got a "Input model at vmaf_v0.6.1.pkl cannot be read successfully." error infomation, please copy file
+"vmaf_v0.6.1.pkl" and "vmaf_v0.6.1.pkl.model" manually into your project path.
+
+linux build:
+first please makesure your gcc is update over version 4.7, because we use c++11 in the code.
+	cd vhall_media_core
+	mkdir objs
+	cd objs
+	cmake .. -G "Unix Makefiles"
+	make
+	
+target files while be in objs/bin
+to get more ask for lichuan
+	
+macosx:
+    enter build folder,open .xcodeproj files used xcode to build
+
+ios build:
+	enter build folder,open .xcodeproj files used xcode to build
+	
+android build:
+	install ndk
+	open cmd console
+	cd ./vinnylive_common/build/android/
+	./build_jni.sh
+
+	
+	

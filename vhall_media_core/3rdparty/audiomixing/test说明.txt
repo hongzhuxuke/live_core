@@ -1,0 +1,12 @@
+ - test.cpp以读文件方式演示了audiomixing的函数功能，示例音频存放在in和out文件夹中，in为输入音频，out为处理结果音频。
+ - 示例使用32000hz音频采样率，数据精度类型为short类型，模拟对四路声音混音。
+ - 示例音频文件夹中带有所有pcm文件的wav格式文件，方便直接听混音结果。
+ - 音频文件说明：
+   - in文件夹
+     Send1 Send2 Send3 Send4分别表示四路待混音的原始数据
+   - out文件夹
+     Receive1：Send1端应收听到的混音结果，即Send2+Send3+Send4
+     Receive2：Send2端应收听到的混音结果，即Send1+Send3+Send4
+     Receive3：Send3端应收听到的混音结果，即Send1+Send2+Send4
+     Receive4：Send4端应收听到的混音结果，即Send1+Send2+Send3
+     ReceiveAll：参与互动方之外的用户应收听到的混音结果，即Send1+Send2+Send3+Send4    

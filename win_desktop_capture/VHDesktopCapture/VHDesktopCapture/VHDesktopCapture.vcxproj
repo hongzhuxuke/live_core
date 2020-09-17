@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{CC085994-6B53-4EA3-B2A7-104F8B1CD12D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>VHDesktopCapture</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;VHDESKTOPCAPTURE_EXPORTS;_WINDOWS;_USRDLL;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=1;_SECURE_ATL;_USING_V110_SDK71_;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;NTDDI_VERSION=0x0A000000;_WIN32_WINNT=0x0A00;WINVER=0x0A00;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;WEBRTC_ENABLE_PROTOBUF=1;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;HAVE_SCTP;USE_BUILTIN_SW_CODECS;WEBRTC_NON_STATIC_TRACE_EVENT_HANDLERS=1;WEBRTC_WIN;_CRT_SECURE_NO_WARNINGS;HAVE_WEBRTC_VIDEO;HAVE_WEBRTC_VOICE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)\libyuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;dxgi.lib;winmm.lib;winhttp.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;VHDESKTOPCAPTURE_EXPORTS;_WINDOWS;_USRDLL;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=1;_SECURE_ATL;_USING_V110_SDK71_;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;NTDDI_VERSION=0x0A000000;_WIN32_WINNT=0x0A00;WINVER=0x0A00;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;WEBRTC_ENABLE_PROTOBUF=1;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;HAVE_SCTP;USE_BUILTIN_SW_CODECS;WEBRTC_NON_STATIC_TRACE_EVENT_HANDLERS=1;WEBRTC_WIN;_CRT_SECURE_NO_WARNINGS;HAVE_WEBRTC_VIDEO;HAVE_WEBRTC_VOICE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)\libyuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;dxgi.lib;winmm.lib;winhttp.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_CONSOLE;VHALL_WIN;V8_DEPRECATION_WARNINGS;USE_AURA=1;NO_TCMALLOC;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;CHROMIUM_BUILD;FIELDTRIAL_TESTING_ENABLED;"CR_CLANG_REVISION=\"325667-1\"";_HAS_EXCEPTIONS=0;__STD_C;_CRT_RAND_S;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;DEPRECATEDENUMERATOR(x)=[[deprecated(x)]];_ATL_NO_OPENGL;_WINDOWS;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=1;_SECURE_ATL;_USING_V110_SDK71_;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;NTDDI_VERSION=0x0A000000;_WIN32_WINNT=0x0A00;WINVER=0x0A00;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;WEBRTC_ENABLE_PROTOBUF=1;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;HAVE_SCTP;USE_BUILTIN_SW_CODECS;WEBRTC_NON_STATIC_TRACE_EVENT_HANDLERS=1;WEBRTC_WIN;_CRT_SECURE_NO_WARNINGS;HAVE_WEBRTC_VIDEO;HAVE_WEBRTC_VOICE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)\libyuv\include;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>winmm.lib;Strmiids.lib;Secur32.lib;Ws2_32.lib;Msdmo.lib;Dmoguids.lib;wmcodecdspuuid.lib;winhttp.lib;d3d11.lib;dxgi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>VHDESKTOPCAPTURE_EXPORTS;_WINDOWS;_USRDLL;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=1;_SECURE_ATL;_USING_V110_SDK71_;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;NTDDI_VERSION=0x0A000000;_WIN32_WINNT=0x0A00;WINVER=0x0A00;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;WEBRTC_ENABLE_PROTOBUF=1;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;HAVE_SCTP;USE_BUILTIN_SW_CODECS;WEBRTC_NON_STATIC_TRACE_EVENT_HANDLERS=1;WEBRTC_WIN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;HAVE_WEBRTC_VIDEO;HAVE_WEBRTC_VOICE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)\libyuv\include;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;dxgi.lib;winmm.lib;winhttp.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ProgramDatabaseFile>$(SolutionDir)pdb32\$(TargetName).pdb</ProgramDatabaseFile>
+      <StripPrivateSymbols>$(SolutionDir)pdb32\stripped\$(TargetName).pdb</StripPrivateSymbols>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="libyuv\source\compare.cc" />
+    <ClCompile Include="libyuv\source\compare_common.cc" />
+    <ClCompile Include="libyuv\source\compare_gcc.cc" />
+    <ClCompile Include="libyuv\source\compare_msa.cc" />
+    <ClCompile Include="libyuv\source\compare_neon.cc" />
+    <ClCompile Include="libyuv\source\compare_neon64.cc" />
+    <ClCompile Include="libyuv\source\compare_win.cc" />
+    <ClCompile Include="libyuv\source\convert.cc" />
+    <ClCompile Include="libyuv\source\convert_argb.cc" />
+    <ClCompile Include="libyuv\source\convert_from.cc" />
+    <ClCompile Include="libyuv\source\convert_from_argb.cc" />
+    <ClCompile Include="libyuv\source\convert_jpeg.cc" />
+    <ClCompile Include="libyuv\source\convert_to_argb.cc" />
+    <ClCompile Include="libyuv\source\convert_to_i420.cc" />
+    <ClCompile Include="libyuv\source\cpu_id.cc" />
+    <ClCompile Include="libyuv\source\mjpeg_decoder.cc" />
+    <ClCompile Include="libyuv\source\mjpeg_validate.cc" />
+    <ClCompile Include="libyuv\source\planar_functions.cc" />
+    <ClCompile Include="libyuv\source\rotate.cc" />
+    <ClCompile Include="libyuv\source\rotate_any.cc" />
+    <ClCompile Include="libyuv\source\rotate_argb.cc" />
+    <ClCompile Include="libyuv\source\rotate_common.cc" />
+    <ClCompile Include="libyuv\source\rotate_gcc.cc" />
+    <ClCompile Include="libyuv\source\rotate_msa.cc" />
+    <ClCompile Include="libyuv\source\rotate_neon.cc" />
+    <ClCompile Include="libyuv\source\rotate_neon64.cc" />
+    <ClCompile Include="libyuv\source\rotate_win.cc" />
+    <ClCompile Include="libyuv\source\row_any.cc" />
+    <ClCompile Include="libyuv\source\row_common.cc" />
+    <ClCompile Include="libyuv\source\row_gcc.cc" />
+    <ClCompile Include="libyuv\source\row_msa.cc" />
+    <ClCompile Include="libyuv\source\row_neon.cc" />
+    <ClCompile Include="libyuv\source\row_neon64.cc" />
+    <ClCompile Include="libyuv\source\row_win.cc" />
+    <ClCompile Include="libyuv\source\scale.cc" />
+    <ClCompile Include="libyuv\source\scale_any.cc" />
+    <ClCompile Include="libyuv\source\scale_argb.cc" />
+    <ClCompile Include="libyuv\source\scale_common.cc" />
+    <ClCompile Include="libyuv\source\scale_gcc.cc" />
+    <ClCompile Include="libyuv\source\scale_msa.cc" />
+    <ClCompile Include="libyuv\source\scale_neon.cc" />
+    <ClCompile Include="libyuv\source\scale_neon64.cc" />
+    <ClCompile Include="libyuv\source\scale_win.cc" />
+    <ClCompile Include="libyuv\source\video_common.cc" />
+    <ClCompile Include="modules\desktop_capture\blank_detector_desktop_capturer_wrapper.cc" />
+    <ClCompile Include="modules\desktop_capture\capture_result_desktop_capturer_wrapper.cc" />
+    <ClCompile Include="modules\desktop_capture\cropped_desktop_frame.cc" />
+    <ClCompile Include="modules\desktop_capture\cropping_window_capturer.cc" />
+    <ClCompile Include="modules\desktop_capture\cropping_window_capturer_win.cc" />
+    <ClCompile Include="modules\desktop_capture\desktop_and_cursor_composer.cc" />
+    <ClCompile Include="modules\desktop_capture\desktop_capturer.cc" />
+    <ClCompile Include="modules\desktop_capture\desktop_capturer_differ_wrapper.cc" />
+    <ClCompile Include="modules\desktop_capture\desktop_capturer_wrapper.cc" />
+    <ClCompile Include="modules\desktop_capture\desktop_capture_options.cc" />
+    <ClCompile Include="modules\desktop_capture\desktop_frame.cc" />
+    <ClCompile Include="modules\desktop_capture\desktop_frame_generator.cc" />
+    <ClCompile Include="modules\desktop_capture\desktop_frame_rotation.cc" />
+    <ClCompile Include="modules\desktop_capture\desktop_frame_win.cc" />
+    <ClCompile Include="modules\desktop_capture\desktop_geometry.cc" />
+    <ClCompile Include="modules\desktop_capture\desktop_region.cc" />
+    <ClCompile Include="modules\desktop_capture\differ_block.cc" />
+    <ClCompile Include="modules\desktop_capture\differ_vector_sse2.cc" />
+    <ClCompile Include="modules\desktop_capture\fake_desktop_capturer.cc" />
+    <ClCompile Include="modules\desktop_capture\fallback_desktop_capturer_wrapper.cc" />
+    <ClCompile Include="modules\desktop_capture\mouse_cursor.cc" />
+    <ClCompile Include="modules\desktop_capture\mouse_cursor_monitor_win.cc" />
+    <ClCompile Include="modules\desktop_capture\resolution_tracker.cc" />
+    <ClCompile Include="modules\desktop_capture\rgba_color.cc" />
+    <ClCompile Include="modules\desktop_capture\screen_capturer_helper.cc" />
+    <ClCompile Include="modules\desktop_capture\screen_capturer_win.cc" />
+    <ClCompile Include="modules\desktop_capture\screen_drawer.cc" />
+    <ClCompile Include="modules\desktop_capture\screen_drawer_win.cc" />
+    <ClCompile Include="modules\desktop_capture\shared_desktop_frame.cc" />
+    <ClCompile Include="modules\desktop_capture\shared_memory.cc" />
+    <ClCompile Include="modules\desktop_capture\window_capturer_win.cc" />
+    <ClCompile Include="modules\desktop_capture\window_finder.cc" />
+    <ClCompile Include="modules\desktop_capture\window_finder_win.cc" />
+    <ClCompile Include="modules\desktop_capture\win\cursor.cc" />
+    <ClCompile Include="modules\desktop_capture\win\d3d_device.cc" />
+    <ClCompile Include="modules\desktop_capture\win\desktop.cc" />
+    <ClCompile Include="modules\desktop_capture\win\display_configuration_monitor.cc" />
+    <ClCompile Include="modules\desktop_capture\win\dxgi_adapter_duplicator.cc" />
+    <ClCompile Include="modules\desktop_capture\win\dxgi_context.cc" />
+    <ClCompile Include="modules\desktop_capture\win\dxgi_duplicator_controller.cc" />
+    <ClCompile Include="modules\desktop_capture\win\dxgi_frame.cc" />
+    <ClCompile Include="modules\desktop_capture\win\dxgi_output_duplicator.cc" />
+    <ClCompile Include="modules\desktop_capture\win\dxgi_texture.cc" />
+    <ClCompile Include="modules\desktop_capture\win\dxgi_texture_mapping.cc" />
+    <ClCompile Include="modules\desktop_capture\win\dxgi_texture_staging.cc" />
+    <ClCompile Include="modules\desktop_capture\win\scoped_thread_desktop.cc" />
+    <ClCompile Include="modules\desktop_capture\win\screen_capturer_win_directx.cc" />
+    <ClCompile Include="modules\desktop_capture\win\screen_capturer_win_gdi.cc" />
+    <ClCompile Include="modules\desktop_capture\win\screen_capturer_win_magnifier.cc" />
+    <ClCompile Include="modules\desktop_capture\win\screen_capture_utils.cc" />
+    <ClCompile Include="modules\desktop_capture\win\window_capture_utils.cc" />
+    <ClCompile Include="rtc_base\checks.cc" />
+    <ClCompile Include="rtc_base\criticalsection.cc" />
+    <ClCompile Include="rtc_base\logging.cc" />
+    <ClCompile Include="rtc_base\platform_thread_types.cc" />
+    <ClCompile Include="rtc_base\random.cc" />
+    <ClCompile Include="rtc_base\stringencode.cc" />
+    <ClCompile Include="rtc_base\stringutils.cc" />
+    <ClCompile Include="rtc_base\thread_checker_impl.cc" />
+    <ClCompile Include="rtc_base\timeutils.cc" />
+    <ClCompile Include="rtc_base\win32.cc" />
+    <ClCompile Include="system_wrappers\source\cpu_features.cc" />
+    <ClCompile Include="system_wrappers\source\metrics_default.cc" />
+    <ClCompile Include="system_wrappers\source\rw_lock.cc" />
+    <ClCompile Include="system_wrappers\source\rw_lock_win.cc" />
+    <ClCompile Include="system_wrappers\source\sleep.cc" />
+    <ClCompile Include="VHDesktopCaptureImpl.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="libyuv\include\libyuv.h" />
+    <ClInclude Include="libyuv\include\libyuv\basic_types.h" />
+    <ClInclude Include="libyuv\include\libyuv\compare.h" />
+    <ClInclude Include="libyuv\include\libyuv\compare_row.h" />
+    <ClInclude Include="libyuv\include\libyuv\convert.h" />
+    <ClInclude Include="libyuv\include\libyuv\convert_argb.h" />
+    <ClInclude Include="libyuv\include\libyuv\convert_from.h" />
+    <ClInclude Include="libyuv\include\libyuv\convert_from_argb.h" />
+    <ClInclude Include="libyuv\include\libyuv\cpu_id.h" />
+    <ClInclude Include="libyuv\include\libyuv\macros_msa.h" />
+    <ClInclude Include="libyuv\include\libyuv\mjpeg_decoder.h" />
+    <ClInclude Include="libyuv\include\libyuv\planar_functions.h" />
+    <ClInclude Include="libyuv\include\libyuv\rotate.h" />
+    <ClInclude Include="libyuv\include\libyuv\rotate_argb.h" />
+    <ClInclude Include="libyuv\include\libyuv\rotate_row.h" />
+    <ClInclude Include="libyuv\include\libyuv\row.h" />
+    <ClInclude Include="libyuv\include\libyuv\scale.h" />
+    <ClInclude Include="libyuv\include\libyuv\scale_argb.h" />
+    <ClInclude Include="libyuv\include\libyuv\scale_row.h" />
+    <ClInclude Include="libyuv\include\libyuv\version.h" />
+    <ClInclude Include="libyuv\include\libyuv\video_common.h" />
+    <ClInclude Include="modules\desktop_capture\blank_detector_desktop_capturer_wrapper.h" />
+    <ClInclude Include="modules\desktop_capture\capture_result_desktop_capturer_wrapper.h" />
+    <ClInclude Include="modules\desktop_capture\cropped_desktop_frame.h" />
+    <ClInclude Include="modules\desktop_capture\cropping_window_capturer.h" />
+    <ClInclude Include="modules\desktop_capture\desktop_and_cursor_composer.h" />
+    <ClInclude Include="modules\desktop_capture\desktop_capturer.h" />
+    <ClInclude Include="modules\desktop_capture\desktop_capturer_differ_wrapper.h" />
+    <ClInclude Include="modules\desktop_capture\desktop_capturer_wrapper.h" />
+    <ClInclude Include="modules\desktop_capture\desktop_capture_options.h" />
+    <ClInclude Include="modules\desktop_capture\desktop_capture_types.h" />
+    <ClInclude Include="modules\desktop_capture\desktop_frame.h" />
+    <ClInclude Include="modules\desktop_capture\desktop_frame_generator.h" />
+    <ClInclude Include="modules\desktop_capture\desktop_frame_rotation.h" />
+    <ClInclude Include="modules\desktop_capture\desktop_frame_win.h" />
+    <ClInclude Include="modules\desktop_capture\desktop_geometry.h" />
+    <ClInclude Include="modules\desktop_capture\desktop_region.h" />
+    <ClInclude Include="modules\desktop_capture\differ_block.h" />
+    <ClInclude Include="modules\desktop_capture\differ_vector_sse2.h" />
+    <ClInclude Include="modules\desktop_capture\fake_desktop_capturer.h" />
+    <ClInclude Include="modules\desktop_capture\fallback_desktop_capturer_wrapper.h" />
+    <ClInclude Include="modules\desktop_capture\mouse_cursor.h" />
+    <ClInclude Include="modules\desktop_capture\mouse_cursor_monitor.h" />
+    <ClInclude Include="modules\desktop_capture\resolution_tracker.h" />
+    <ClInclude Include="modules\desktop_capture\rgba_color.h" />
+    <ClInclude Include="modules\desktop_capture\screen_capturer_helper.h" />
+    <ClInclude Include="modules\desktop_capture\screen_capture_frame_queue.h" />
+    <ClInclude Include="modules\desktop_capture\screen_drawer.h" />
+    <ClInclude Include="modules\desktop_capture\shared_desktop_frame.h" />
+    <ClInclude Include="modules\desktop_capture\shared_memory.h" />
+    <ClInclude Include="modules\desktop_capture\window_finder.h" />
+    <ClInclude Include="modules\desktop_capture\window_finder_win.h" />
+    <ClInclude Include="modules\desktop_capture\win\cursor.h" />
+    <ClInclude Include="modules\desktop_capture\win\d3d_device.h" />
+    <ClInclude Include="modules\desktop_capture\win\desktop.h" />
+    <ClInclude Include="modules\desktop_capture\win\display_configuration_monitor.h" />
+    <ClInclude Include="modules\desktop_capture\win\dxgi_adapter_duplicator.h" />
+    <ClInclude Include="modules\desktop_capture\win\dxgi_context.h" />
+    <ClInclude Include="modules\desktop_capture\win\dxgi_duplicator_controller.h" />
+    <ClInclude Include="modules\desktop_capture\win\dxgi_frame.h" />
+    <ClInclude Include="modules\desktop_capture\win\dxgi_output_duplicator.h" />
+    <ClInclude Include="modules\desktop_capture\win\dxgi_texture.h" />
+    <ClInclude Include="modules\desktop_capture\win\dxgi_texture_mapping.h" />
+    <ClInclude Include="modules\desktop_capture\win\dxgi_texture_staging.h" />
+    <ClInclude Include="modules\desktop_capture\win\scoped_gdi_object.h" />
+    <ClInclude Include="modules\desktop_capture\win\scoped_thread_desktop.h" />
+    <ClInclude Include="modules\desktop_capture\win\screen_capturer_win_directx.h" />
+    <ClInclude Include="modules\desktop_capture\win\screen_capturer_win_gdi.h" />
+    <ClInclude Include="modules\desktop_capture\win\screen_capturer_win_magnifier.h" />
+    <ClInclude Include="modules\desktop_capture\win\screen_capture_utils.h" />
+    <ClInclude Include="modules\desktop_capture\win\window_capture_utils.h" />
+    <ClInclude Include="rtc_base\arraysize.h" />
+    <ClInclude Include="rtc_base\atomicops.h" />
+    <ClInclude Include="rtc_base\basictypes.h" />
+    <ClInclude Include="rtc_base\bytebuffer.h" />
+    <ClInclude Include="rtc_base\checks.h" />
+    <ClInclude Include="rtc_base\constructormagic.h" />
+    <ClInclude Include="rtc_base\criticalsection.h" />
+    <ClInclude Include="rtc_base\deprecation.h" />
+    <ClInclude Include="rtc_base\logging.h" />
+    <ClInclude Include="rtc_base\platform_thread_types.h" />
+    <ClInclude Include="rtc_base\random.h" />
+    <ClInclude Include="rtc_base\stringencode.h" />
+    <ClInclude Include="rtc_base\stringutils.h" />
+    <ClInclude Include="rtc_base\thread_annotations.h" />
+    <ClInclude Include="rtc_base\thread_checker.h" />
+    <ClInclude Include="rtc_base\thread_checker_impl.h" />
+    <ClInclude Include="rtc_base\timeutils.h" />
+    <ClInclude Include="rtc_base\type_traits.h" />
+    <ClInclude Include="rtc_base\win32.h" />
+    <ClInclude Include="system_wrappers\include\cpu_features_wrapper.h" />
+    <ClInclude Include="system_wrappers\include\metrics.h" />
+    <ClInclude Include="system_wrappers\include\metrics_default.h" />
+    <ClInclude Include="system_wrappers\include\rw_lock_wrapper.h" />
+    <ClInclude Include="system_wrappers\include\sleep.h" />
+    <ClInclude Include="system_wrappers\source\rw_lock_win.h" />
+    <ClInclude Include="VHDesktopCaptureImpl.h" />
+    <ClInclude Include="VHDesktopCaptureInterface.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

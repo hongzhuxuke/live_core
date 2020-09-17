@@ -1,0 +1,66 @@
+cmake_minimum_required(VERSION 3.7)
+
+PROJECT(srs_librtmp)
+set(PROJECT_VERSION_MAJOR 2)
+set(PROJECT_VERSION_MINOR 0)
+
+#include(${PROJECT_SOURCE_DIR}/cmake/CheckCompiler.cmake)
+#include(${PROJECT_SOURCE_DIR}/cmake/UserOption.cmake)
+include(${CMAKE_ROOT}/Modules/CMakeDetermineSystem.cmake)
+#if(CMAKE_SYSTEM_NAME == "Windows")
+#	add_definitions(_WIN32)
+if(WIN32)
+	ADD_DEFINITIONS(-D_WIN32)
+endif()
+
+include_directories(./src/core ./src/kernel ./src/libs ./src/protocol ./objs)
+
+set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/libs)
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
+
+ADD_SUBDIRECTORY(src)
+
+execute_process(
+	COMMAND ${CMAKE_COMMAND} -E copy ${PROJECT_SOURCE_DIR}/src/libs/srs_librtmp.hpp	${PROJECT_SOURCE_DIR}/include/srs_librtmp.h
+	COMMAND echo "copy header files"
+	)
+
+include_directories(./include)
+
+add_executable(srs_aac_raw_publish ./research/librtmp/srs_aac_raw_publish.c)
+target_link_libraries(srs_aac_raw_publish srs_librtmp)
+
+add_executable(srs_audio_raw_publish ./research/librtmp/srs_audio_raw_publish.c)
+target_link_libraries(srs_audio_raw_publish srs_librtmp)
+
+add_executable(srs_bandwidth_check ./research/librtmp/srs_bandwidth_check.c)
+target_link_libraries(srs_bandwidth_check srs_librtmp)
+
+add_executable(srs_detect_rtmp ./research/librtmp/srs_detect_rtmp.c)
+target_link_libraries(srs_detect_rtmp srs_librtmp)
+
+add_executable(srs_flv_injecter ./research/librtmp/srs_flv_injecter.c)
+target_link_libraries(srs_flv_injecter srs_librtmp)
+
+add_executable(srs_flv_parser ./research/librtmp/srs_flv_parser.c)
+target_link_libraries(srs_flv_parser srs_librtmp)
+
+add_executable(srs_h264_raw_publish ./research/librtmp/srs_h264_raw_publish.c)
+target_link_libraries(srs_h264_raw_publish srs_librtmp)
+
+add_executable(srs_ingest_flv ./research/librtmp/srs_ingest_flv.c)
+target_link_libraries(srs_ingest_flv srs_librtmp)
+
+add_executable(srs_ingest_rtmp ./research/librtmp/srs_ingest_rtmp)
+target_link_libraries(srs_ingest_rtmp srs_librtmp)
+
+add_executable(srs_play ./research/librtmp/srs_play.c)
+target_link_libraries(srs_play srs_librtmp)
+
+add_executable(srs_publish ./research/librtmp/srs_publish.c)
+target_link_libraries(srs_publish srs_librtmp)
+
+add_executable(srs_rtmp_dump ./research/librtmp/srs_rtmp_dump.c)
+target_link_libraries(srs_rtmp_dump srs_librtmp)
+
+#ADD_SUBDIRECTORY(research)

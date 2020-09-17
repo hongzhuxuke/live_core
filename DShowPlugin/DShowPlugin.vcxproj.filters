@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{13c7e79e-dcbc-4157-af5a-79bbe67971b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{730deac8-407e-4508-b58c-4852a1ff3e80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\Utility">
+      <UniqueIdentifier>{8030ecc5-7c27-49f5-9534-5f0656676760}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DShowPlugin.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DShowPlugin.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\rundir\plugins\DShowPlugin\shaders\ChromaKey_HDYCToRGB.pShader">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\rundir\plugins\DShowPlugin\shaders\ChromaKey_RGB.pShader">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\rundir\plugins\DShowPlugin\shaders\ChromaKey_UYVToRGB.pShader">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\rundir\plugins\DShowPlugin\shaders\ChromaKey_YUVToRGB.pShader">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\rundir\plugins\DShowPlugin\shaders\ChromaKey_YUXVToRGB.pShader">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\rundir\plugins\DShowPlugin\shaders\ChromaKey_YVUToRGB.pShader">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\rundir\plugins\DShowPlugin\shaders\ChromaKey_YVXUToRGB.pShader">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\rundir\plugins\DShowPlugin\shaders\HDYCToRGB.pShader">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\rundir\plugins\DShowPlugin\shaders\UYVToRGB.pShader">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\rundir\plugins\DShowPlugin\shaders\YUVToRGB.pShader">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\rundir\plugins\DShowPlugin\shaders\YUXVToRGB.pShader">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\rundir\plugins\DShowPlugin\shaders\YVUToRGB.pShader">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\rundir\plugins\DShowPlugin\shaders\YVXUToRGB.pShader">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseHieLog|Win32">
+      <Configuration>ReleaseHieLog</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseHieLog|x64">
+      <Configuration>ReleaseHieLog</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{733D5756-00DD-445E-9771-97E36267B68F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MediaConnector</RootNamespace>
+    <ProjectName>MediaCore</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseHieLog|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseHieLog|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseHieLog|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseHieLog|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)..\..\common;$(ProjectDir)..\..\common\interface;$(SolutionDir)\x264;$(SolutionDir)\libfaac;$(ProjectDir)..\..\common\def;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\rtmppush;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\common;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\3rdparty\json;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\voicetransition;$(ProjectDir)..\..\</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(SolutionDir)$(Configuration)\;$(ProjectDir)..\..\vhall_live_core\vhall_media_core_build\bin\$(Configuration)\;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\build\windows\libsx86\ffmpeg\lib;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\build\windows\libsx86\x264\lib;..\vhall_media_core\build\windows\libsx86\kd_voice\libs;$(ProjectDir)..\..\vhall_media_core\build\windows\libsx86_64\kd_voice\libs;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\build\windows\libsx86\vmaf\lib\Debug</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)..\..\common;$(ProjectDir)..\..\common\interface;$(ProjectDir)..\..\common\def;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\rtmppush;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\common;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\3rdparty\json;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\3rdparty\videofilter\src;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\voicetransition;$(ProjectDir)..\..\;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\build\windows\libsx86_64\ffmpeg\include;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\build\windows\libsx86_64\x264\include;$(SolutionDir)vhall_live_core\vhall_media_core\build\windows\libsx86_64\kd_voice\inlcude</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(SolutionDir)$(Platform)\$(Configuration)\;$(ProjectDir)..\..\vhall_live_core\vhall_media_core_build\bin\$(Configuration)\;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\build\windows\libsx86_64\ffmpeg\lib;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\build\windows\libsx86_64\x264\lib;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\build\windows\libsx86_x64\kd_voice\libs;$(SolutionDir)vhall_live_core\vhall_media_core_build\bin\Release;$(SolutionDir)vhall_live_core\vhall_media_core\build\windows\libsx86_64\kd_voice\libs;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\build\windows\libsx86_64\vmaf\lib\Debug</LibraryPath>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(SolutionDir)$(Configuration)\;$(ProjectDir)..\..\vhall_live_core\vhall_media_core_build\bin\$(Configuration)\;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\build\windows\libsx86\ffmpeg\lib;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\build\windows\libsx86\x264\lib;..\vhall_media_core\build\windows\libsx86\kd_voice\libs;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\build\windows\libsx86\vmaf\lib</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)..\..\common\def;$(ProjectDir)..\..\common\interface;$(ProjectDir)..\..\common;$(SolutionDir)\x264;$(SolutionDir)\libfaac;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\rtmppush;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\common;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\3rdparty\json;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\voicetransition;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(SolutionDir)$(Platform)\$(Configuration)\;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\build\windows\libsx86_64\ffmpeg\lib;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\build\windows\libsx86_64\x264\lib;$(SolutionDir)vhall_live_core\vhall_media_core\build\windows\libsx86_64\kd_voice\libs;$(SolutionDir)vhall_live_core\vhall_media_core_build\bin\Release;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\build\windows\libsx86_64\vmaf\lib\;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\build\windows\libsx86_x64\kd_voice\libs</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)..\..\common\def;$(ProjectDir)..\..\common\interface;$(ProjectDir)..\..\common;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\rtmppush;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\common;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\3rdparty\json;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\3rdparty\videofilter\src;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\voicetransition;$(SolutionDir)vhall_live_core\vhall_media_core\build\windows\libsx86_64\ffmpeg\include;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\build\windows\libsx86_64\x264\lib;$(SolutionDir)vhall_live_core\vhall_media_core\build\windows\libsx86_64\kd_voice\inlcude;$(IncludePath)</IncludePath>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseHieLog|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(SolutionDir)$(Configuration)\;$(SolutionDir)\x264\libs\32bit;$(ProjectDir)..\..\vhall_live_core\vhall_media_core_build\bin\$(Configuration)\;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\build\windows\libsx86\ffmpeg3.2\lib;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\build\windows\libsx86\x264\bin;..\vhall_media_core\build\windows\libsx86\kd_voice\libs</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)..\..\common\def;$(ProjectDir)..\..\common\interface;$(ProjectDir)..\..\common;$(SolutionDir)\x264;$(SolutionDir)\libfaac;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\rtmppush;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\common;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\3rdparty\json;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\voicetransition;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseHieLog|x64'">
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(SolutionDir)$(Configuration)\;$(SolutionDir)\x264\libs\32bit;$(ProjectDir)..\..\vhall_live_core\vhall_media_core_build\bin\$(Configuration)\;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\build\windows\libsx86\ffmpeg3.2\lib;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\build\windows\libsx86\x264\bin;..\vhall_media_core\build\windows\libsx86\kd_voice\libs</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)..\..\common\def;$(ProjectDir)..\..\common\interface;$(ProjectDir)..\..\common;$(SolutionDir)\x264;$(SolutionDir)\libfaac;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\rtmppush;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\common;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\3rdparty\json;$(ProjectDir)..\..\vhall_live_core\vhall_media_core\voicetransition;$(IncludePath)</IncludePath>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;MEDIACORE_EXPORTS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\vhall_live_core\vhall_media_core\build\windows\libsx86\ffmpeg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DisableSpecificWarnings>2280;4839;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies);rtmp_push.lib;vhall_muxers.lib;vhall_encoder.lib;libjingle.lib;json.lib;ws2_32.lib;Wsock32.lib;srs_librtmp.lib;multitcp.lib;avformat.lib;avcodec.lib;avutil.lib;avdevice.lib;swscale.lib;postproc.lib;swresample.lib;libx264-157.lib;Secur32.lib;Wininet.lib;Crypt32.lib;iphlpapi.lib;winmm.lib;noise_suppression.lib;vhall_audio_process.lib;rate_control.lib;vhall_voice_transition.lib;msc.lib;avfilter.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;libvmaf.lib;media_quality.lib</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;MEDIACORE_EXPORTS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DisableSpecificWarnings>2280;4839;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies);rtmp_push.lib;vhall_muxers.lib;vhall_encoder.lib;libjingle.lib;json.lib;ws2_32.lib;Wsock32.lib;srs_librtmp.lib;multitcp.lib;avformat.lib;avcodec.lib;avutil.lib;avdevice.lib;swscale.lib;postproc.lib;swresample.lib;libx264-157.lib;Secur32.lib;Wininet.lib;Crypt32.lib;iphlpapi.lib;winmm.lib;noise_suppression.lib;vhall_audio_process.lib;rate_control.lib;vhall_voice_transition.lib;msc_x64.lib;avfilter.lib;libvmaf.lib;media_quality.lib;video_filter.lib</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;MEDIACORE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\vhall_live_core\vhall_media_core\build\windows\libsx86\ffmpeg\include</AdditionalIncludeDirectories>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DisableSpecificWarnings>2280;4839</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>%(AdditionalDependencies);rtmp_push.lib;vhall_muxers.lib;vhall_encoder.lib;libjingle.lib;json.lib;ws2_32.lib;Wsock32.lib;srs_librtmp.lib;multitcp.lib;avformat.lib;avcodec.lib;avutil.lib;avdevice.lib;swscale.lib;postproc.lib;swresample.lib;libx264-157.lib;Secur32.lib;Wininet.lib;Crypt32.lib;iphlpapi.lib;winmm.lib;noise_suppression.lib;vhall_audio_process.lib;rate_control.lib;vhall_voice_transition.lib;msc.lib;avfilter.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;libvmaf.lib;media_quality.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <StripPrivateSymbols>
+      </StripPrivateSymbols>
+      <AdditionalOptions>/SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;MEDIACORE_EXPORTS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>2280;4839</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>%(AdditionalDependencies);rtmp_push.lib;vhall_muxers.lib;vhall_encoder.lib;D:\workspace\vhall_vls\vhall_live_core\vhall_media_core_build\bin\Release\libjingle.lib;json.lib;ws2_32.lib;Wsock32.lib;srs_librtmp.lib;multitcp.lib;avformat.lib;avcodec.lib;avutil.lib;avdevice.lib;swscale.lib;postproc.lib;swresample.lib;libx264-157.lib;Secur32.lib;Wininet.lib;Crypt32.lib;iphlpapi.lib;winmm.lib;noise_suppression.lib;vhall_audio_process.lib;rate_control.lib;vhall_voice_transition.lib;msc_x64.lib;avfilter.lib;libvmaf.lib;media_quality.lib;video_filter.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>$(SolutionDir)pdb32\$(TargetName).pdb</ProgramDatabaseFile>
+      <StripPrivateSymbols>$(SolutionDir)pdb32\stripped\$(TargetName).pdb</StripPrivateSymbols>
+      <AdditionalOptions>/SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseHieLog|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;MEDIACORE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\vhall_live_core\vhall_media_core\build\windows\libsx86\ffmpeg3.2\include</AdditionalIncludeDirectories>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DisableSpecificWarnings>2280;4839</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>%(AdditionalDependencies);rtmp_push.lib;vhall_muxers.lib;vhall_encoder.lib;libjingle.lib;json.lib;ws2_32.lib;Wsock32.lib;srs_librtmp.lib;avformat.lib;avcodec.lib;avutil.lib;avdevice.lib;swscale.lib;postproc.lib;swresample.lib;libx264-148.lib;Secur32.lib;Wininet.lib;Crypt32.lib;multitcp.lib;iphlpapi.lib;winmm.lib;noise_suppression.lib;vhall_audio_process.lib;rate_control.lib;vhall_voice_transition.lib;msc.lib;avfilter.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>$(SolutionDir)pdb32\$(TargetName).pdb</ProgramDatabaseFile>
+      <StripPrivateSymbols>$(SolutionDir)pdb32\stripped\$(TargetName).pdb</StripPrivateSymbols>
+      <AdditionalOptions>/SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseHieLog|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;MEDIACORE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\vhall_live_core\vhall_media_core\build\windows\libsx86\ffmpeg3.2\include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>2280;4839</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>%(AdditionalDependencies);rtmp_push.lib;vhall_muxers.lib;vhall_encoder.lib;libjingle.lib;json.lib;ws2_32.lib;Wsock32.lib;srs_librtmp.lib;avformat.lib;avcodec.lib;avutil.lib;avdevice.lib;swscale.lib;postproc.lib;swresample.lib;libx264-148.lib;Secur32.lib;Wininet.lib;Crypt32.lib;multitcp.lib;iphlpapi.lib;winmm.lib;noise_suppression.lib;vhall_audio_process.lib;rate_control.lib;vhall_voice_transition.lib;msc.lib;avfilter.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>$(SolutionDir)pdb32\$(TargetName).pdb</ProgramDatabaseFile>
+      <StripPrivateSymbols>$(SolutionDir)pdb32\stripped\$(TargetName).pdb</StripPrivateSymbols>
+      <AdditionalOptions>/SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\common\interface\IMediaCore.h" />
+    <ClInclude Include="..\..\common\Logging.h" />
+    <ClInclude Include="ffmpeg_demuxer.h" />
+    <ClInclude Include="MediaCore.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\common\Logging.cpp" />
+    <ClCompile Include="ffmpeg_demuxer.cpp" />
+    <ClCompile Include="MediaCore.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
